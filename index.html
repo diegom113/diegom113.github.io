@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Drip Fort - Página Principal</title>
+  <title>Drip Fort - Página de Inicio</title>
+  <meta charset="UTF-8">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f7f7f7;
     }
 
     header {
@@ -18,42 +20,53 @@
 
     h1 {
       margin: 0;
+      margin-bottom: 20px;
     }
 
-    .main-content {
+    .inicio {
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
-      background-color: #f7f7f7;
+      background-color: #fff;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
-    .main-content img {
+    .inicio img {
       max-width: 100%;
+      height: auto;
     }
 
-    #subcatalogos {
-      position: fixed;
-      top: 50%;
+    .indice {
+      position: absolute;
+      top: 70px;
       left: 0;
-      transform: translateY(-50%);
-      background-color: #f7f7f7;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-      display: none;
+      right: 0;
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      display: flex;
+      justify-content: center;
     }
 
-    #subcatalogos button {
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    .indice ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .indice li {
+      margin: 0 30px; /* Ajusta el margen horizontal aquí */
+    }
+
+    .indice a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
     }
   </style>
   <script>
@@ -66,19 +79,21 @@
 </head>
 <body>
   <header>
-    <h1>Drip Fort</h1>
+    <h1></h1>
+    <div class="indice">
+      <ul>
+        <li><a href="file:///Users/diegomarquez/Documents/Admin/Visual/Sitio%20Drip/tenis.html#">Tenis</a></li>
+        <li><a href="file:///Users/diegomarquez/Documents/Admin/Visual/Sitio%20Drip/T-Shirts.html">T-Shirts</a></li>
+        <li><a href="file:///Users/diegomarquez/Documents/Admin/Visual/Sitio%20Drip/Gorras.html">Gorras</a></li>
+        <li><a href="file:///Users/diegomarquez/Documents/Admin/Visual/Sitio%20Drip/Perfumes.html">Perfumes</a></li>
+        <li><a href="file:///Users/diegomarquez/Documents/Admin/Visual/Sitio%20Drip/Acerca%20de%20nosotros.html">Acerca de nosotros</a></li>
+        <li><a href="file:///Users/diegomarquez/Documents/Admin/Visual/Sitio%20Drip/FAQ.HTML">FAQ</a></li>
+      </ul>
+    </div>
   </header>
 
-  <div class="main-content">
-    <h2>Página Principal</h2>
-    <img src="pagina_principal.jpg" alt="Foto de la Página Principal">
-    <p>Aquí van los datos de la página principal...</p>
-    <button onclick="toggleSubcatalogos()">Ver Catálogos</button>
-  </div>
-
-  <div id="subcatalogos">
-    <button onclick="window.location.href = 'tenis.html'">Catálogo de Tenis</button>
-    <button onclick="window.location.href = 'playeras.html'">Catálogo de Playeras</button>
+  <div class="inicio">
+    <img src="./images/dripfortp.png" alt="Imagen de Inicio">
   </div>
 </body>
 </html>
