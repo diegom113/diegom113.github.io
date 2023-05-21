@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>T-Shirts - Drip Fort</title>
+  <title>Tenis - Drip Fort</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Times New Roman, serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f7f7;
+      background-color: #F6F7FC;
     }
 
     header {
-      background-color: #333;
-      color: #fff;
+      background-color: #090909;
+      color: #F6F7FC;
       padding: 20px;
       text-align: center;
     }
@@ -20,6 +20,7 @@
     h1 {
       margin: 0;
       margin-bottom: 20px;
+      cursor: pointer;
     }
 
     .titulo {
@@ -29,15 +30,15 @@
     }
 
     .producto {
-      max-width: 800px;
+      max-width: 650px;
       margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      background-color: #f6f7fc03;
+      border-radius: 10px;
+      box-shadow: 0 10px 5px rgba(152, 189, 200, 0.1);
       text-align: left;
       display: flex;
-      align-items: center;
+      align-items: left;
     }
 
     .producto img {
@@ -48,61 +49,98 @@
 
     .producto .nombre {
       font-weight: bold;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+    
+    .producto .modelo {
+      font-size: 12px;
+      color: #686565;
+      margin-bottom: 10px;
     }
 
     .producto .precio {
-      font-size: 16px;
+      font-size: 25px;
       color: #333;
-      margin-top: 5px;
     }
+
+    .boton-messenger {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      background-color: #0077ff00;
+      color: #ffffff01;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .boton-messenger img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
   </style>
 </head>
 <body>
   <header>
-    <h1>Drip Fort</h1>
+    <h1><a href="file:///Users/diegomarquez/Documents/Admin/Visual/Sitio%20Drip/index.html#">Drip Fort</a></h1>
   </header>
 
   <div class="titulo"></div>
 
   <div class="producto">
-    <img src="tshirt1.jpg" alt="T-Shirt 1">
+    <img src="./images/TS.jpeg" alt="T-Shirt">
     <div>
-      <div class="nombre">T-Shirt 1</div>
-      <div class="precio">$29.99</div>
+      <div class="nombre">T-Shirt "Moncler"</div>
+      <div class="modelo">Top Quality</div>
+      <div class="precio">$750.00</div>
     </div>
   </div>
 
   <div class="producto">
-    <img src="tshirt2.jpg" alt="T-Shirt 2">
+    <img src="./images/TS2.jpeg" alt="T-Shirt">
     <div>
-      <div class="nombre">T-Shirt 2</div>
-      <div class="precio">$19.99</div>
+      <div class="nombre">T-Shirt "Off White"</div>
+      <div class="modelo">Top Quality</div>
+      <div class="precio">$750.00</div>
     </div>
   </div>
 
   <div class="producto">
-    <img src="tshirt3.jpg" alt="T-Shirt 3">
+    <img src="./images/TS3.jpeg" alt="T-Shirt">
     <div>
-      <div class="nombre">T-Shirt 3</div>
-      <div class="precio">$24.99</div>
+      <div class="nombre">T-Shirt "Off White"</div>
+      <div class="modelo">Top Quality</div>
+      <div class="precio">$750.00</div>
     </div>
   </div>
 
   <div class="producto">
-    <img src="tshirt4.jpg" alt="T-Shirt 4">
+    <img src="./images/TS4.jpeg" alt="T-Shirt">
     <div>
-      <div class="nombre">T-Shirt 4</div>
-      <div class="precio">$34.99</div>
+      <div class="nombre">T-Shirt "Palm Angels"</div>
+      <div class="modelo">Top Quality</div>
+      <div class="precio">$750.00</div>
     </div>
   </div>
 
   <div class="producto">
-    <img src="tshirt5.jpg" alt="T-Shirt 5">
+    <img src="./images/TS5.jpeg" alt="T-Shirt">
     <div>
-      <div class="nombre">T-Shirt 5</div>
-      <div class="precio">$39.99</div>
+      <div class="nombre">T-Shirt "Balmain Paris"</div>
+      <div class="modelo">Top Quality</div>
+      <div class="precio">$750.00</div>
     </div>
   </div>
+
+  <a href="https://www.facebook.com/profile.php?id=100090378116170" class="boton-messenger">
+    <img src="./images/messenger.png" alt="Messenger Logo">
+  </a>
 </body>
 </html>

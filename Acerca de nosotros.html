@@ -9,6 +9,7 @@
       margin: 0;
       padding: 0;
       background-color: #f7f7f7;
+      position: relative; /* Se agrega posición relativa para el contenedor del cuerpo */
     }
 
     header {
@@ -27,7 +28,7 @@
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #f6f3f3;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -74,6 +75,15 @@
       text-decoration: none;
       color: #333;
     }
+
+    /* Estilos para la imagen en la parte inferior derecha */
+    .imagen-footer {
+      position: absolute;
+      bottom: 20px;
+      right: 400px;
+      max-width: 400px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -85,23 +95,28 @@
     <h2>Acerca de Nosotros</h2>
     <p class="descripcion">
       Somos una marca de ropa y accesorios urbana y contemporánea. Nuestro objetivo es ofrecer productos de alta calidad y diseño único que reflejen el estilo de vida de las personas apasionadas por la moda y la cultura urbana.
+      Si tienes más dudas sobre quiénes somos y dónde estamos, no dudes en contactarnos en cualquiera de nuestras redes sociales.
     </p>
 
     <div class="contacto">
       <h2>Contacto</h2>
-      <p>Correo electrónico: info@dripfort.com</p>
-      <p>Teléfono: (123) 456-7890</p>
-      <p>Dirección: Calle Principal 123, Ciudad, País</p>
+      <p>Correo electrónico: dripfortgdl@gmail.com</p>
+      <p>Teléfono: +52 1 33 3326 6635</p>
+      <p>Dirección: Guadalajara, Jalisco</p>
     </div>
 
     <div class="redes-sociales">
       <h2>Síguenos en redes sociales</h2>
       <ul>
         <li><a href="https://www.instagram.com/dripfort/">Instagram</a></li>
-        <li><a href="https://www.facebook.com/dripfort/">Facebook</a></li>
-        <li><a href="https://twitter.com/dripfort/">Twitter</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100090378116170">Facebook</a></li>
+        <li><a href="https://twitter.com/dripfort/">Tik Tok</a></li>
       </ul>
     </div>
+
+    <!-- Imagen en la parte inferior derecha -->
+    <img class="imagen-footer" src="./images/ora.jpeg" alt="Imagen de ejemplo">
+
   </div>
 </body>
 </html>
